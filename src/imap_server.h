@@ -29,5 +29,6 @@ public:
     ~ImapServer();
     bool start();
     void stop();
+    bool isRunning() const { return running.load(); }
 };
 #endif
